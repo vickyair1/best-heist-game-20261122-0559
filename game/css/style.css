@@ -1,0 +1,35 @@
+/* GILT — The Aurum Gallery Heist. style.css
+   One job: the page around the canvas. Dark gallery wall, centred game,
+   nothing else — the game itself is the whole page. */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #05070f;
+  color: #e8ecff;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+canvas {
+  display: block;
+  width: min(1280px, 100%);
+  height: auto;
+  background: #0b0e1a;
+  border: 1px solid #2a3054;
+  box-shadow: 0 0 60px rgba(80, 100, 200, 0.18);
+}
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: #9aa3c7;
+  text-align: center;
+  max-width: 1280px;
+}
